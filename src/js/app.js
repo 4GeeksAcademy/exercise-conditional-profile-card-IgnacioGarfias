@@ -48,31 +48,28 @@ function render(variables = {}) {
    <h3>${variables.city ? variables.city : "Barcelona"}, ${
     variables.country ? variables.country : "Spain"
   }</h3> 
-  <ul class="${
-    variables.socialMediaPosition === "left"
-      ? "position-left"
-      : "position-right"
-  }">
-  <li>${
-    variables.twitter
-      ? `<a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a>`
-      : '<i class="fab fa-twitter"></i>'
-  }</li>
-  <li>${
-    variables.github
-      ? `<a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a>`
-      : '<i class="fab fa-github"></i> '
-  }</li>
-  <li>${
-    variables.linkedin
-      ? `<a href="https://linkedin.com/in/${variables.linkedin}"><i class="fab fa-linkedin"></i></a>`
-      : '<i class="fab fa-linkedin"></i>'
-  }</li>
-  <li>${
-    variables.instagram
-      ? `<a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a>`
-      : '<i class="fab fa-instagram"></i>'
-  }</li>
+  <ul class="${variables.socialMediaPosition}
+    }">
+    <li>${
+      variables.twitter
+        ? `<a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a>`
+        : '<i class="fab fa-twitter"></i>'
+    }</li>
+    <li>${
+      variables.github
+        ? `<a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a>`
+        : '<i class="fab fa-github"></i>'
+    }</li>
+    <li>${
+      variables.linkedin
+        ? `<a href="https://linkedin.com/in/${variables.linkedin}"><i class="fab fa-linkedin"></i></a>`
+        : '<i class="fab fa-linkedin"></i>'
+    }</li>
+    <li>${
+      variables.instagram
+        ? `<a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a>`
+        : '<i class="fab fa-instagram"></i>'
+    }</li>
 </ul>
 </div>`;
 }
